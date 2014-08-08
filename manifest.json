@@ -1,0 +1,22 @@
+{
+  "name": "Skeleton extension",
+  "version": "0.1",
+  "description": "A skeleton extension to get started",
+  "background": {
+    "scripts": [ "background.js" ]
+  },
+  "commands": {
+    "example_keyboard_command": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+S",
+        "mac": "Ctrl+Shift+S"
+      },
+      "description": "Do the thing"
+    }
+  },
+  "options_page": "options.html",
+  "permissions": [
+    "activeTab"
+  ],
+  "manifest_version": 2
+}
