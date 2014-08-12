@@ -1,22 +1,22 @@
 {
-  "name": "Skeleton extension",
+  "name": "An Extension",
   "version": "0.1",
-  "description": "A skeleton extension to get started",
+  "description": "An extension to modify the context menu when an HTML element contains a aria-describedat and/or longdesc property.",
   "background": {
     "scripts": [ "background.js" ]
   },
-  "commands": {
-    "example_keyboard_command": {
-      "suggested_key": {
-        "default": "Ctrl+Shift+S",
-        "mac": "Ctrl+Shift+S"
-      },
-      "description": "Do the thing"
-    }
+  "content_scripts": [{
+    "matches": ["<all_urls>"],
+    "js": ["lastRightClick.js"]
+  }],
+  "icons": {
+    "16": "favicon.png"
   },
-  "options_page": "options.html",
   "permissions": [
-    "activeTab"
+    "tabs",
+    "contextMenus",
+    "storage"
   ],
-  "manifest_version": 2
+  "manifest_version": 2,
+  "options_page": "options.html"
 }
