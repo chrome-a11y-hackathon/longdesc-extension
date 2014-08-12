@@ -15,7 +15,8 @@
   "permissions": [
     "tabs",
     "contextMenus",
-    "storage"
+    "storage",
+    "<all_urls>"
   ],
   "manifest_version": 2,
   "options_page": "options.html"

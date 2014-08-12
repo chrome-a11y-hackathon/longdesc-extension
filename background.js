@@ -6,7 +6,6 @@ var longDesc = '';
  * immediately used in all already-open tabs. It's not needed for any
  * new tabs that open after that, the content script will be automatically
  * injected into any new tab.
- * TODO(raedmak) Doesn't work. Can somebody take a look at this?
  */
 chrome.windows.getAll({'populate': true}, function(windows) {
   for (var i = 0; i < windows.length; i++) {
