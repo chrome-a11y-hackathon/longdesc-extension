@@ -67,7 +67,6 @@ function addBorders() {
   elementArray.concat(new Array(document.querySelectorAll('[aria-describedat]')));
 
   for (var i = 0; i < elementArray.length; i++) {
-    // TODO(raedmak) Extract to CSS file.
     borderColor = elementArray[0][i].style.borderColor;
     borderStyle = elementArray[0][i].style.borderStyle;
     borderWidth = elementArray[0][i].style.borderWidth;

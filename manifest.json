@@ -10,7 +10,7 @@
     "js": ["lastRightClick.js"]
   }],
   "icons": {
-    "16": "favicon.png"
+    "16": "icon.png"
   },
   "permissions": [
     "tabs",
